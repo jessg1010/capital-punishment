@@ -1,0 +1,14 @@
+* {
+    -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+  #map {
+    height: 400px;
+  }
+
+
+h1 {
+  text-align: center;
+}
