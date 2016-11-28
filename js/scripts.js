@@ -8,13 +8,22 @@ var map = L.map('map').setView([37.8, -96], 4);
 		id: 'mapbox.light'
 	}).addTo(map);
 
-  function getColor(inmates) {
-		return inmates > 1000 ? '#800026' :
-				inmates > 500  ? '#BD0026' :
-				inmates > 200  ? '#E31A1C' :
-				inmates > 100  ? '#FC4E2A' :
-				inmates > 50   ? '#FD8D3C' :
-				inmates > 20   ? '#FEB24C' :
-				inmates > 10   ? '#FED976' :
+  function getColor(d) {
+		return d > 1000 ? '#800026' :
+				d > 500  ? '#BD0026' :
+				d > 200  ? '#E31A1C' :
+				d > 100  ? '#FC4E2A' :
+				d > 50   ? '#FD8D3C' :
+				d > 20   ? '#FEB24C' :
+				d > 10   ? '#FED976' :
 							'#FFEDA0';
 	}
+
+	function highlightFeature(e) {
+    e.target.setStyle({
+        weight: 5,
+        color: getColor(e.target.feature.properties.colour),
+        dashArray: '',
+        fillOpacity: 0.7
+    });
+}
