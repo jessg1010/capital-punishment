@@ -129,8 +129,8 @@ $(document).ready(function() {
                     pointStart: 1
                 }],
                 tooltip: {
-                    headerFormat: '<span style="font-size: 10px">' + $td.parent().find('th').html() + ', Q{point.x}:</span><br/>',
-                    pointFormat: '<b>{point.y}.000</b> USD'
+                    headerFormat: '<span style="font-size: 10px">' + $td.parent().find('th').html() + ',{point.x}:</span><br/>',
+                    pointFormat: '<b>{point.y}'
                 },
                 chart: chart
             });
@@ -152,4 +152,196 @@ $(document).ready(function() {
     }
     doChunk();
 
+});
+
+$(function () {
+    Highcharts.chart('neighboringStates1', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Murder Rates Comparison Between Illinois and Missouri'
+        },
+        subtitle: {
+            text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+        },
+        xAxis: {
+            categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Population (millions)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' millions'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Year 1800',
+            data: [107, 31, 635, 203, 2]
+        }, {
+            name: 'Year 1900',
+            data: [133, 156, 947, 408, 6]
+        }, {
+            name: 'Year 2012',
+            data: [1052, 954, 4250, 740, 38]
+        }]
+    });
+});
+
+$(function () {
+    Highcharts.chart('neighboringStates2', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Murder Rates Comparison Between West Virginia and Kentucky'
+        },
+        subtitle: {
+            text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+        },
+        xAxis: {
+            categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Population (millions)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' millions'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Year 1800',
+            data: [107, 31, 635, 203, 2]
+        }, {
+            name: 'Year 1900',
+            data: [133, 156, 947, 408, 6]
+        }, {
+            name: 'Year 2012',
+            data: [1052, 954, 4250, 740, 38]
+        }]
+    });
+});
+
+$(function () {
+    Highcharts.chart('neighboringStates3', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Murder Rates Comparison Between West Virginia and Kentucky'
+        },
+        subtitle: {
+            text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+        },
+        xAxis: {
+            categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Population (millions)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' millions'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: -40,
+            y: 80,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Year 1800',
+            data: [107, 31, 635, 203, 2]
+        }, {
+            name: 'Year 1900',
+            data: [133, 156, 947, 408, 6]
+        }, {
+            name: 'Year 2012',
+            data: [1052, 954, 4250, 740, 38]
+        }]
+    });
 });

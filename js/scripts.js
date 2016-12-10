@@ -20,7 +20,8 @@ var map = L.map('map').setView([37.8, -96], 4);
 	    this._div.innerHTML = '<h4>U.S. Death Row Inmate total</h4>' +  (props ?
 	        '<b>' + props.name + '</b><br />' + props.inmateTotal + ' people ' +
 					'</b><br />' + props.dateAbolished
-	        : 'Hover over a state to view its total');
+	        :'Hover over a state to view its number' +
+					'</b><br />' + 'of inmates (as of July 1, 2016)') ;
 	};
 
 	info.addTo(map);
