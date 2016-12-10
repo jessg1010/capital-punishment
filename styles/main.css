@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 10px 70px 10px 70px;
+  margin: 10px 60px 10px 60px;
   padding: 15px;
 }
   #map {
@@ -78,10 +78,6 @@ thead th {
   float: left;
 }
 
-.murderRates, footer {
-  clear: both;
-  padding-top: 10px;
-}
 
 #nationalTotal {
   border-style: groove;
@@ -89,14 +85,19 @@ thead th {
   padding: 8px;
 }
 
-#neighboringStates1, #neighboringStates2, #neighboringStates3 {
+#neighboringStates1, #neighboringStates2, #neighboringStates3, #neighboringStates4 {
   float: right;
   width: 50%;
   margin: 0 auto;
-  height: 400px;
-  padding-top: 80px;
+  height: 375px;
+  padding-top: 50px;
 }
 
+.murderRates {
+  clear: both;;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+}
 
   a:link {color: #E37474;}
   a:visited {color: #870505;}
@@ -109,4 +110,14 @@ thead th {
       margin: 7px;
       padding: 0;
           }
-        }
+#nationalTotal {
+  margin: 0 auto;
+      }
+#neighboringStates1, #neighboringStates2, #neighboringStates3, #neighboringStates4 {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  height: 300px;
+}
+
+}

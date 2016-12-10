@@ -163,10 +163,10 @@ $(function () {
             text: 'Murder Rates Comparison Between Illinois and Missouri'
         },
         subtitle: {
-            text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+            text: 'Source: FBI Uniform Crime Reports'
         },
         xAxis: {
-            categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+            categories: ['Illinois', 'Missouri'],
             title: {
                 text: null
             }
@@ -174,15 +174,12 @@ $(function () {
         yAxis: {
             min: 0,
             title: {
-                text: 'Population (millions)',
+                text: 'Murder rate (# of murder crimes/population)',
                 align: 'high'
             },
             labels: {
                 overflow: 'justify'
             }
-        },
-        tooltip: {
-            valueSuffix: ' millions'
         },
         plotOptions: {
             bar: {
@@ -195,8 +192,8 @@ $(function () {
             layout: 'vertical',
             align: 'right',
             verticalAlign: 'top',
-            x: -40,
-            y: 80,
+            x: -10,
+            y: 60,
             floating: true,
             borderWidth: 1,
             backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
@@ -206,14 +203,17 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Year 1800',
-            data: [107, 31, 635, 203, 2]
+            name: 'Year 2010',
+            data: [5.5, 7]
         }, {
-            name: 'Year 1900',
-            data: [133, 156, 947, 408, 6]
+            name: 'Year 2011',
+            data: [5.6, 6.1]
         }, {
             name: 'Year 2012',
-            data: [1052, 954, 4250, 740, 38]
+            data: [5.8, 6.5]
+        },{
+            name: 'Year 2013',
+            data: [5.5, 6.1]
         }]
     });
 });
@@ -227,10 +227,10 @@ $(function () {
             text: 'Murder Rates Comparison Between West Virginia and Kentucky'
         },
         subtitle: {
-            text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+            text: 'Source: FBI Uniform Crime Reports'
         },
         xAxis: {
-            categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+            categories: ['Kentucky', 'West Virginia'],
             title: {
                 text: null
             }
@@ -238,15 +238,12 @@ $(function () {
         yAxis: {
             min: 0,
             title: {
-                text: 'Population (millions)',
+                text: 'Murder rate (# of murder crimes/population)',
                 align: 'high'
             },
             labels: {
                 overflow: 'justify'
             }
-        },
-        tooltip: {
-            valueSuffix: ' millions'
         },
         plotOptions: {
             bar: {
@@ -259,8 +256,8 @@ $(function () {
             layout: 'vertical',
             align: 'right',
             verticalAlign: 'top',
-            x: -40,
-            y: 80,
+            x: -10,
+            y: 60,
             floating: true,
             borderWidth: 1,
             backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
@@ -270,14 +267,17 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Year 1800',
-            data: [107, 31, 635, 203, 2]
+            name: 'Year 2010',
+            data: [5.5, 7]
         }, {
-            name: 'Year 1900',
-            data: [133, 156, 947, 408, 6]
+            name: 'Year 2011',
+            data: [5.6, 6.1]
         }, {
             name: 'Year 2012',
-            data: [1052, 954, 4250, 740, 38]
+            data: [5.8, 6.5]
+        },{
+            name: 'Year 2013',
+            data: [5.5, 6.1]
         }]
     });
 });
@@ -288,13 +288,13 @@ $(function () {
             type: 'bar'
         },
         title: {
-            text: 'Murder Rates Comparison Between West Virginia and Kentucky'
+            text: 'Murder Rates Comparison Between North Dakota and South Dakota'
         },
         subtitle: {
-            text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+            text: 'Source: FBI Uniform Crime Reports'
         },
         xAxis: {
-            categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+            categories: ['North Dakota', 'South Dakota'],
             title: {
                 text: null
             }
@@ -302,15 +302,12 @@ $(function () {
         yAxis: {
             min: 0,
             title: {
-                text: 'Population (millions)',
+                text: 'Murder rate (# of murder crimes/population)',
                 align: 'high'
             },
             labels: {
                 overflow: 'justify'
             }
-        },
-        tooltip: {
-            valueSuffix: ' millions'
         },
         plotOptions: {
             bar: {
@@ -324,7 +321,7 @@ $(function () {
             align: 'right',
             verticalAlign: 'top',
             x: -40,
-            y: 80,
+            y: 130,
             floating: true,
             borderWidth: 1,
             backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
@@ -334,14 +331,80 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Year 1800',
-            data: [107, 31, 635, 203, 2]
+            name: 'Year 2010',
+            data: [1.5, 2.8]
         }, {
-            name: 'Year 1900',
-            data: [133, 156, 947, 408, 6]
+            name: 'Year 2011',
+            data: [3.5, 2.5]
         }, {
             name: 'Year 2012',
-            data: [1052, 954, 4250, 740, 38]
+            data: [4, 3]
+        },{
+            name: 'Year 2013',
+            data: [2.2, 2.4]
+        }]
+    });
+});
+$(function () {
+    Highcharts.chart('neighboringStates4', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Murder Rates Comparison Between Colorado and Wyoming'
+        },
+        subtitle: {
+            text: 'Source: FBI Uniform Crime Reports'
+        },
+        xAxis: {
+            categories: ['Colorado', 'Wyoming'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Murder rate (# of murder crimes/population)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+            x: 0,
+            y: 140,
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'Year 2010',
+            data: [2.4, 1.4]
+        }, {
+            name: 'Year 2011',
+            data: [2.9, 3.2]
+        }, {
+            name: 'Year 2012',
+            data: [3.1, 2.4]
+        },{
+            name: 'Year 2013',
+            data: [3.4, 2.9]
         }]
     });
 });
