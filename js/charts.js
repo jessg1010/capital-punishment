@@ -160,13 +160,13 @@ $(function () {
             type: 'bar'
         },
         title: {
-            text: 'Murder Rates Comparison Between Illinois and Missouri'
+            text: 'Murder Rates from Illinois and Missouri'
         },
         subtitle: {
-            text: 'Source: FBI Uniform Crime Reports'
+            text: 'Illinois (without death penalty), Missouri (with death penalty)'
         },
         xAxis: {
-            categories: ['Illinois', 'Missouri'],
+            categories: ['Illinois', 'Missouri' ],
             title: {
                 text: null
             }
@@ -224,10 +224,10 @@ $(function () {
             type: 'bar'
         },
         title: {
-            text: 'Murder Rates Comparison Between West Virginia and Kentucky'
+            text: 'Murder Rates from Kentucky and West Virginia'
         },
         subtitle: {
-            text: 'Source: FBI Uniform Crime Reports'
+            text: 'Kentucky (with death penalty), West Virginia (without death penalty)'
         },
         xAxis: {
             categories: ['Kentucky', 'West Virginia'],
@@ -291,7 +291,7 @@ $(function () {
             text: 'Murder Rates Comparison Between North Dakota and South Dakota'
         },
         subtitle: {
-            text: 'Source: FBI Uniform Crime Reports'
+            text: 'North Dakota (without death penalty), South Dakota (with death penalty)'
         },
         xAxis: {
             categories: ['North Dakota', 'South Dakota'],
@@ -354,7 +354,7 @@ $(function () {
             text: 'Murder Rates Comparison Between Colorado and Wyoming'
         },
         subtitle: {
-            text: 'Source: FBI Uniform Crime Reports'
+            text: 'Colorado (with death penalty), Wyoming (without death penalty)'
         },
         xAxis: {
             categories: ['Colorado', 'Wyoming'],
